@@ -87,7 +87,8 @@ https://github.com/ASHA-KORADA/RFM-Customer-Segmentation-PowerBI/blob/main/RFM_A
 
 ## 📂 Project Files
 
- - `dataset.xlsx`  
+ - `RFM_Ecommerce_Dataset.xlsx`
+ - `RFM_Analysis.png`
 - `README.md`  
 
 ---
