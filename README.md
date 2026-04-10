@@ -81,14 +81,13 @@ This analysis helps businesses:
 
 ## 📸 Dashboard Preview
 
-![Dashboard Screenshot](dashboard.png)
+https://github.com/ASHA-KORADA/RFM-Customer-Segmentation-PowerBI/blob/main/RFM_Analysis.png
 
 ---
 
 ## 📂 Project Files
 
  - `dataset.xlsx`  
-https://github.com/ASHA-KORADA/RFM-Customer-Segmentation-PowerBI/blob/main/RFM_Analysis.png 
 - `README.md`  
 
 ---
