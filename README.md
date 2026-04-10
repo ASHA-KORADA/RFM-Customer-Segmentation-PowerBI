@@ -88,7 +88,7 @@ This analysis helps businesses:
 ## 📂 Project Files
 
  - `dataset.xlsx`  
-- `dashboard.png`  
+https://github.com/ASHA-KORADA/RFM-Customer-Segmentation-PowerBI/blob/main/RFM_Analysis.png 
 - `README.md`  
 
 ---
