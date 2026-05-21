@@ -1,110 +1,178 @@
-# 🚀 RFM-Based Customer Segmentation & Business Insights (Power BI Project)
 
-## 📌 Project Overview
-This project focuses on analyzing customer behavior using **RFM (Recency, Frequency, Monetary) analysis**.  
-The goal is to segment customers based on their purchasing patterns and derive actionable business insights.
 
-The dashboard is built using **Power BI** and demonstrates how data-driven segmentation can support decision-making in real-world business scenarios.
+# 📌 Project Overview
+
+This project focuses on analyzing customer purchasing behavior using **RFM (Recency, Frequency, Monetary) Analysis** to identify high-value customers, churn risks, and revenue-driving customer segments.
+
+The project was developed using:
+
+- **SQL Server 2022** for backend analytics and customer segmentation
+- **Power BI** for interactive dashboard visualization
+- **DAX** for customer-level calculations and dynamic analysis
+
+The goal of this project is to demonstrate how customer segmentation can support data-driven business decisions, customer retention strategies, and revenue optimization.
 
 ---
 
-## 📊 What is RFM Analysis?
+# 📊 What is RFM Analysis?
 
 RFM is a customer segmentation technique based on:
 
-- **Recency (R):** How recently a customer made a purchase  
-- **Frequency (F):** How often a customer makes purchases  
-- **Monetary (M):** How much a customer spends  
+- **Recency (R):** How recently a customer made a purchase
+- **Frequency (F):** How often a customer purchases
+- **Monetary (M):** How much revenue a customer generates
+
+Customers are grouped into segments based on their purchasing behavior patterns.
 
 ---
 
-## 🔧 Steps Performed
+# 🛠 Tools & Technologies Used
 
-1. **Data Preparation**
-   - Used a synthetic e-commerce dataset
-   - Cleaned and structured transaction-level data
-
-2. **Customer Aggregation**
-   - Converted transaction data into customer-level summary using DAX
-
-3. **RFM Calculation**
-   - Recency → Days since last purchase  
-   - Frequency → Number of orders  
-   - Monetary → Total spend  
-
-4. **RFM Scoring**
-   - Applied percentile-based scoring (1–5 scale)
-   - Used `PERCENTILEX.INC` for dynamic segmentation
-
-5. **Customer Segmentation**
-   - Classified customers into:
-     - Champions  
-     - Loyal Customers  
-     - At Risk  
-     - Lost Customers  
-     - Others  
-
-6. **Dashboard Development**
-   - Built interactive visuals using Power BI
-   - Added slicers for dynamic filtering
-   - Designed KPI cards and scatter plots
+- SQL Server 2022
+- Power BI
+- DAX (Data Analysis Expressions)
+- Data Modeling
+- Window Functions (`NTILE`)
+- Customer Segmentation
+- Business Intelligence & Analytics
 
 ---
 
-## 📈 Key Insights
+# 🔧 Project Workflow
 
-- 52% of customers are high-value (Champions + Loyal Customers)  
-- Loyal customers contribute significantly to revenue  
-- 26% of customers represent growth opportunity  
-- 23% of customers are at risk of churn  
+## 1️⃣ Data Preparation
+- Used a synthetic e-commerce transaction dataset
+- Cleaned and structured transactional data
 
----
+## 2️⃣ SQL-Based RFM Analysis
+- Calculated Recency, Frequency, and Monetary metrics
+- Created reusable SQL Views
+- Applied `NTILE(5)` scoring logic
+- Built customer segmentation logic using SQL
 
-## 🎯 Business Value
+## 3️⃣ Customer Segmentation
+Customers were classified into:
 
-This analysis helps businesses:
+- Champions
+- Loyal Customers
+- At Risk
+- Lost Customers
+- Others
 
-- Improve customer retention strategies  
-- Identify high-value customers  
-- Detect churn risks early  
-- Optimize marketing campaigns  
+## 4️⃣ Business Insights Analysis
+Performed SQL-based business analysis including:
 
----
+- Segment distribution analysis
+- Revenue contribution analysis
+- Churn-risk identification
+- Customer ranking analysis
+- Customer behavior comparison
 
-## 🛠 Tools & Technologies
-
-- Power BI  
-- DAX (Data Analysis Expressions)  
-- Data Modeling  
-
----
-
-## 📸 Dashboard Preview
-
-https://github.com/ASHA-KORADA/RFM-Customer-Segmentation-PowerBI/blob/main/RFM_Analysis.png
-
----
-
-## 📂 Project Files
-
- - `RFM_Ecommerce_Dataset.xlsx`
- - `RFM_Analysis.png`
-- `README.md`  
+## 5️⃣ Dashboard Development
+- Built interactive Power BI dashboard
+- Added KPI cards, slicers, scatter plots, and segmentation visuals
+- Created customer behavior visualizations
 
 ---
 
-## 📌 Note
+# 📂 Project Structure
 
-This project uses a **synthetic dataset** created to simulate real-world customer behavior and business scenarios.
+```text
+RFM-Customer-Segmentation-PowerBI
+│
+├── Dataset
+│   └── RFM_Ecommerce_Dataset.xlsx
+│
+├── SQL_Project
+│   ├── RFM_Customer_Segmentation.sql
+│   └── Business_Insights_Queries.sql
+│
+├── Dashboard
+│   ├── RFM_Analysis.png
+│   └── RFM.pbix
+│
+└── README.md
+````
 
 ---
 
-## 💬 Feedback
+# 📈 Key Business Insights
+
+## ✅ Business Strengths
+
+* Loyal Customers form the largest customer segment, indicating strong customer retention.
+* Loyal Customers contribute a significant share of business revenue.
+* Champions segment represents highly engaged premium customers.
+
+## ⚠️ Business Risks
+
+* Several high-spending customers belong to “At Risk” and “Lost Customers” segments.
+* Lost Customers show high average spending, indicating revenue leakage through customer churn.
+* At Risk customers still contribute substantial revenue and require immediate retention focus.
+
+## 🚀 Growth Opportunities
+
+* “Others” segment contributes the highest overall revenue, showing strong conversion potential.
+* Converting moderate-value customers into Loyal Customers can improve long-term business growth.
+
+## 🎯 Strategic Recommendations
+
+* Implement retention campaigns for At Risk customers.
+* Launch win-back strategies for Lost Customers.
+* Strengthen loyalty programs for Champions and Loyal Customers.
+* Use segmentation-based marketing for personalized targeting.
+
+---
+
+# 📊 Dashboard Preview
+
+https://github.com/ASHA-KORADA/RFM-Customer-Segmentation-PowerBI/blob/main/Dashboard/RFM_Analysis.png
+
+---
+
+# 📌 SQL Business Questions Solved
+
+1. Customer Segment Distribution Analysis
+2. Revenue Contribution by Segment
+3. Average Spending Analysis
+4. Top 10 High-Value Customers
+5. At Risk Customers Analysis
+6. Lost Customers Analysis
+7. Segment-wise Customer Behavior Analysis
+8. Customer Revenue Ranking
+9. Revenue Share Percentage by Segment
+
+---
+
+# 📌 Key SQL Concepts Used
+
+* Aggregate Functions
+* GROUP BY
+* CASE Statements
+* Window Functions
+* NTILE()
+* Views
+* Customer Segmentation Logic
+* Revenue Analytics
+* Ranking Functions
+
+---
+
+# 📌 Note
+
+This project uses a **synthetic e-commerce dataset** created to simulate realistic customer purchasing behavior and business scenarios.
+
+---
+
+# 💬 Feedback
 
 I would love to hear your feedback and suggestions for improvement!
 
 ---
 
-## 🔗 Connect with Me
+# 🔗 Connect With Me
 
-- LinkedIn: https://www.linkedin.com/posts/asha-korada_powerbi-dataanalytics-rfmanalysis-share-7448373915548033024-pNv1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGSiApIBRE5Br4jgXC7XChMeUJcxzeQr62E
+* LinkedIn:
+  [https://www.linkedin.com/posts/asha-korada_powerbi-dataanalytics-rfmanalysis-share-7448373915548033024-pNv1](https://www.linkedin.com/posts/asha-korada_powerbi-dataanalytics-rfmanalysis-share-7448373915548033024-pNv1)
+
+```
