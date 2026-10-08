@@ -76,23 +76,32 @@ Performed SQL-based business analysis including:
 ---
 
 # 📂 Project Structure
-
 ```text
 RFM-Customer-Segmentation-PowerBI
 │
 ├── Dataset
+│   ├── README.md
 │   └── RFM_Ecommerce_Dataset.xlsx
 │
 ├── SQL_Project
+│   ├── README.md
 │   ├── RFM_Customer_Segmentation.sql
-│   └── Business_Insights_Queries.sql
+│   ├── Business_Insights_Queries.sql
+│   │
+│   └── SQL_Results
+│       ├── README.md
+│       ├── 01_Customer_Segment_Distribution.png
+│       ├── 02_Revenue_by_Customer_Segment.png
+│       ├── 03_At_Risk_Customers_Analysis.png
+│       ├── 04_Revenue_Share_by_Segment.png
+│       └── RFM Customer Segmentation Insights.png
 │
 ├── Dashboard
+│   ├── README.md
 │   ├── RFM_Analysis.png
-│   └── RFM.pbix
+│   └── RFM_Analysis.pbix
 │
 └── README.md
-````
 
 ---
 
